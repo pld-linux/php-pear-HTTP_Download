@@ -35,7 +35,7 @@ In PEAR status of this package is: %{_status}.
 %description -l pl
 Dostarcza prostego w u¿yciu interfejsu do wysy³ania ukrytych plików do
 klienta poprzez HTTP. Mo¿liwo¶ci to cache'owanie HTTP, kompresja oraz
-zakresy (czê¶ciowe ¶ciaganie oraz wznawianie po³±czenia).
+zakresy (czê¶ciowe ¶ci±ganie oraz wznawianie po³±czenia).
 
 UWAGA: Nie u¿ywaj tej klasy wraz z opcj± PHP kompresji "w locie", gdy¿
 przes³ane pliki mog± byæ uszkodzone.
