@@ -36,6 +36,9 @@ Dostarcza prostego w u¿yciu interfejsu do wysy³ania ukrytych plików do
 klienta poprzez HTTP. Mo¿liwo¶ci to cache'owanie HTTP, kompresja oraz
 zakresy (czê¶ciowe ¶ciaganie oraz wznawianie po³±czenia).
 
+UWAGA: Nie u¿ywaj tej klasy wraz z opcj± PHP kompresji "w locie", gdy¿
+przes³ane pliki mog± byæ uszkodzone.
+
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
