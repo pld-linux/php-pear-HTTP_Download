@@ -4,17 +4,17 @@
 %include	/usr/lib/rpm/macros.php
 %define         _class          HTTP
 %define         _subclass       Download
-%define		_status		stable
+%define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Send HTTP Downloads
 Name:		php-pear-%{_pearname}
-Version:	0.2
+Version:	0.3
 Release:	1
-License:	PHP
+License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	62668b87fb900d7871971661ea0b6952
+# Source0-md5:	31218cf20c1ab58dee28937c3f30b6f3
 URL:		http://pear.php.net/package/HTTP_Download/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -34,7 +34,7 @@ This class has in PEAR status: %{_status}.
 %description -l pl
 Dostarcza prostego w u¿yciu interfejsu do wysy³ania ukrytych plików do
 klienta poprzez HTTP. Mo¿liwo¶ci to cache'owanie HTTP, kompresja oraz
-zakresy (czê¶ciowe ¶ciaganie oraz wznawianie po³±æzenia).
+zakresy (czê¶ciowe ¶ciaganie oraz wznawianie po³±czenia).
 
 Ta klasa ma w PEAR status: %{_status}.
 
