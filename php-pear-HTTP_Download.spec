@@ -9,12 +9,12 @@
 
 Summary:	%{_pearname} - Send HTTP Downloads
 Name:		php-pear-%{_pearname}
-Version:	0.3
+Version:	0.4
 Release:	1
 License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	31218cf20c1ab58dee28937c3f30b6f3
+# Source0-md5:	10078b332cb807c4b0d52d313ca5a796
 URL:		http://pear.php.net/package/HTTP_Download/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
