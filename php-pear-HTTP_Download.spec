@@ -1,13 +1,14 @@
 # ToDo:
 # - fix pl description (arbitrary data ?)
+
 %include	/usr/lib/rpm/macros.php
-%define         _class          HTTP
-%define         _subclass       Download
+%define		_class		HTTP
+%define		_subclass	Download
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Send HTTP Downloads
-Summary(pl):	%{_pearname} - Obs³uga transferu plików przez HTTP
+Summary:	%{_pearname} - send HTTP Downloads
+Summary(pl):	%{_pearname} - obs³uga transferu plików przez HTTP
 Name:		php-pear-%{_pearname}
 Version:	0.5.2
 Release:	1
