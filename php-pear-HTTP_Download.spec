@@ -10,12 +10,12 @@
 Summary:	%{_pearname} - send HTTP Downloads
 Summary(pl):	%{_pearname} - obs³uga transferu plików przez HTTP
 Name:		php-pear-%{_pearname}
-Version:	0.6.1
+Version:	0.6.2
 Release:	1
 License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	3744b113a3e7df7d55bc82ebeb2ca230
+# Source0-md5:	3fad9daeb2c112ac558a99143e7dd17e
 URL:		http://pear.php.net/package/HTTP_Download/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
