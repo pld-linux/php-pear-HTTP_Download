@@ -6,16 +6,17 @@
 %define		_subclass	Download
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
+%define		_rc			RC3
 
 Summary:	%{_pearname} - send HTTP Downloads
 Summary(pl):	%{_pearname} - obs³uga transferu plików przez HTTP
 Name:		php-pear-%{_pearname}
-Version:	0.10.0
-Release:	3
+Version:	1.1.0
+Release:	0.%{_rc}.1
 License:	PHP 3.0
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	869ea6a7c45a7274f1bbcfe786bd1bc3
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_rc}.tgz
+# Source0-md5:	99407a5748ae3c87f4d0e087a6c127e5
 URL:		http://pear.php.net/package/HTTP_Download/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -46,13 +47,13 @@ przes³ane pliki mog± byæ uszkodzone.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
+%setup -q -c -n %{name}-%{version}%{_rc}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 
-install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}%{_rc}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
