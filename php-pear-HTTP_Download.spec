@@ -6,13 +6,13 @@
 %define		_subclass	Download
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
-%define		_rc			RC3
 
 Summary:	%{_pearname} - send HTTP Downloads
 Summary(pl):	%{_pearname} - obs³uga transferu plików przez HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
-%define	_rel 1.1
+%define	_rc	RC3
+%define	_rel 1.2
 Release:	0.%{_rc}.%{_rel}
 License:	PHP 3.0
 Group:		Development/Languages/PHP
@@ -20,7 +20,11 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_rc}.tgz
 # Source0-md5:	99407a5748ae3c87f4d0e087a6c127e5
 URL:		http://pear.php.net/package/HTTP_Download/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-common >= 3:4.2.0
+Requires:	php-pcre
 Requires:	php-pear
+Requires:	php-pear-PEAR
+Requires:	php-pear-HTTP_Header
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
