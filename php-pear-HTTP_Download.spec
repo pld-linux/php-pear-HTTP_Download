@@ -14,6 +14,7 @@ Version:	1.1.0
 %define	_rc	RC3
 %define	_rel 2
 Release:	0.%{_rc}.%{_rel}
+Epoch:		0
 License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_rc}.tgz
