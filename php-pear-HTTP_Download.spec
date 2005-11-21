@@ -4,21 +4,19 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		HTTP
 %define		_subclass	Download
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - send HTTP Downloads
 Summary(pl):	%{_pearname} - obs³uga transferu plików przez HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
-%define	_rc	RC3
-%define	_rel 2
-Release:	0.%{_rc}.%{_rel}
+Release:	1
 Epoch:		0
 License:	PHP 3.0
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_rc}.tgz
-# Source0-md5:	99407a5748ae3c87f4d0e087a6c127e5
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	2930e57becabe5842f258087bbb2bc6d
 URL:		http://pear.php.net/package/HTTP_Download/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.2.0
