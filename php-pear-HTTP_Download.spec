@@ -22,8 +22,8 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pcre
 Requires:	php-pear
-Requires:	php-pear-PEAR
 Requires:	php-pear-HTTP_Header
+Requires:	php-pear-PEAR-core
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,12 +31,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_noautoreq	'pear(Archive/Tar.php)' 'pear(Archive/Zip.php)' 'pear(MIME/Type.*)'
 
 %description
-Provides an easy interface to send hidden files or any arbitrary data to
-the client over HTTP. It features HTTP Caching, Compression and Ranges
-(partial downloads and resuming).
+Provides an easy interface to send hidden files or any arbitrary data
+to the client over HTTP. It features HTTP Caching, Compression and
+Ranges (partial downloads and resuming).
 
-NOTE: Don't use with PHP's on-the-fly output compression, because files
-may be sent coruppted.
+NOTE: Don't use with PHP's on-the-fly output compression, because
+files may be sent coruppted.
 
 In PEAR status of this package is: %{_status}.
 
