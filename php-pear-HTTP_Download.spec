@@ -7,7 +7,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - send HTTP Downloads
-Summary(pl):	%{_pearname} - obs³uga transferu plików przez HTTP
+Summary(pl.UTF-8):   %{_pearname} - obsÅ‚uga transferu plikÃ³w przez HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.1.1
 Release:	3
@@ -41,19 +41,19 @@ files may be sent coruppted.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Dostarcza prostego w u¿yciu interfejsu do wysy³ania ukrytych plików do
-klienta poprzez HTTP. Mo¿liwo¶ci to cache'owanie HTTP, kompresja oraz
-zakresy (czê¶ciowe ¶ci±ganie oraz wznawianie po³±czenia).
+%description -l pl.UTF-8
+Dostarcza prostego w uÅ¼yciu interfejsu do wysyÅ‚ania ukrytych plikÃ³w do
+klienta poprzez HTTP. MoÅ¼liwoÅ›ci to cache'owanie HTTP, kompresja oraz
+zakresy (czÄ™Å›ciowe Å›ciÄ…ganie oraz wznawianie poÅ‚Ä…czenia).
 
-UWAGA: Nie u¿ywaj tej klasy wraz z opcj± PHP kompresji "w locie", gdy¿
-przes³ane pliki mog± byæ uszkodzone.
+UWAGA: Nie uÅ¼ywaj tej klasy wraz z opcjÄ… PHP kompresji "w locie", gdyÅ¼
+przesÅ‚ane pliki mogÄ… byÄ‡ uszkodzone.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -62,7 +62,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
