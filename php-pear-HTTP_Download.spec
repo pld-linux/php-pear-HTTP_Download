@@ -10,7 +10,7 @@ Summary:	%{_pearname} - send HTTP Downloads
 Summary(pl.UTF-8):	%{_pearname} - obsługa transferu plików przez HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.1.3
-Release:	1
+Release:	2
 Epoch:		0
 License:	PHP 3.0
 Group:		Development/Languages/PHP
