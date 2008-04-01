@@ -1,6 +1,3 @@
-# ToDo:
-# - fix pl description (arbitrary data ?)
-
 %include	/usr/lib/rpm/macros.php
 %define		_class		HTTP
 %define		_subclass	Download
@@ -42,12 +39,13 @@ files may be sent coruppted.
 In PEAR status of this package is: %{_status}.
 
 %description -l pl.UTF-8
-Dostarcza prostego w użyciu interfejsu do wysyłania ukrytych plików do
-klienta poprzez HTTP. Możliwości to cache'owanie HTTP, kompresja oraz
-zakresy (częściowe ściąganie oraz wznawianie połączenia).
+Ta klasa dostarcza prosty w użyciu interfejs do wysyłania ukrytych
+plików lub dowolnych danych do klienta poprzez HTTP. Możliwości to
+cache'owanie HTTP, kompresja oraz zakresy (częściowe ściąganie oraz
+wznawianie połączenia).
 
-UWAGA: Nie używaj tej klasy wraz z opcją PHP kompresji "w locie", gdyż
-przesłane pliki mogą być uszkodzone.
+UWAGA: Nie należy używać tej klasy wraz z opcją PHP kompresji "w
+locie", gdyż przesłane pliki mogą być uszkodzone.
 
 Ta klasa ma w PEAR status: %{_status}.
 
@@ -85,8 +83,8 @@ fi
 %defattr(644,root,root,755)
 %doc install.log optional-packages.txt
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}
+%{php_pear_dir}/HTTP/*.php
+%{php_pear_dir}/HTTP/Download
 
 %files tests
 %defattr(644,root,root,755)
