@@ -7,21 +7,25 @@ Summary:	%{_pearname} - send HTTP Downloads
 Summary(pl.UTF-8):	%{_pearname} - obsługa transferu plików przez HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.1.3
-Release:	2
-Epoch:		0
+Release:	3
 License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	d8113c7e6fca25724680b499e3c0644a
 URL:		http://pear.php.net/package/HTTP_Download/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php(pcre)
 Requires:	php-common >= 3:4.2.0
+Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-HTTP_Header
 Requires:	php-pear-PEAR-core
+Suggests:	php-mime_magic
+Suggests:	php-pear-Archive_Tar
+Suggests:	php-pear-Archive_Zip
+Suggests:	php-pear-MIME_Type
+Suggests:	php-pgsql
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -53,9 +57,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
+Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
