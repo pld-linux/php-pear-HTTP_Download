@@ -26,6 +26,7 @@ Suggests:	php-pear-Archive_Tar
 Suggests:	php-pear-Archive_Zip
 Suggests:	php-pear-MIME_Type
 Suggests:	php-pgsql
+Obsoletes:	php-pear-HTTP_Download-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -53,20 +54,6 @@ locie", gdyż przesłane pliki mogą być uszkodzone.
 
 Ta klasa ma w PEAR status: %{_status}.
 
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development/Languages/PHP
-Requires:	%{name} = %{version}-%{release}
-AutoProv:	no
-AutoReq:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
-
 %prep
 %pear_package_setup
 
@@ -89,7 +76,3 @@ fi
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/HTTP/*.php
 %{php_pear_dir}/HTTP/Download
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/*
