@@ -2,7 +2,6 @@
 %define		_subclass	Download
 %define		_status		stable
 %define		_pearname	HTTP_Download
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - send HTTP Downloads
 Summary(pl.UTF-8):	%{_pearname} - obsługa transferu plików przez HTTP
 Name:		php-pear-%{_pearname}
